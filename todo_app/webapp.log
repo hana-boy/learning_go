@@ -1,0 +1,885 @@
+2024/06/08 17:57:56 main.go:16: test
+2024/06/09 10:44:38 users.go:56: near "where": syntax error
+2024/06/09 17:33:09 server.go:3413: http: panic serving 127.0.0.1:53762: open app/views/templates/%!s(MISSING).html: The system cannot find the file specified.
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x3b1940?, 0xc000088150?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x491030, 0xc00009c0e0}, {0x38b420, 0x48d1b0}, {0xc000029ab8?, 0xc000061408?, 0xc000029aa0?})
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:16 +0x251
+todo_app/app/controllers.top({0x491030?, 0xc00009c0e0?}, 0xc000029b30?)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x6cae00?, {0x491030?, 0xc00009c0e0?}, 0x30a51a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0xc9139?, {0x491030, 0xc00009c0e0}, 0xc000098000)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000088030?}, {0x491030?, 0xc00009c0e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000136000, {0x491718, 0xc00001f020})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/09 17:33:11 server.go:3413: http: panic serving 127.0.0.1:53763: open app/views/templates/%!s(MISSING).html: The system cannot find the file specified.
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x3b1940?, 0xc00001f260?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x491030, 0xc0001301c0}, {0x38b420, 0x48d1b0}, {0xc00004dab8?, 0xc000180008?, 0xc00004daa0?})
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:16 +0x251
+todo_app/app/controllers.top({0x491030?, 0xc0001301c0?}, 0xc00004db30?)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x6cae00?, {0x491030?, 0xc0001301c0?}, 0x30a51a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0xc9139?, {0x491030, 0xc0001301c0}, 0xc00019e000)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000184090?}, {0x491030?, 0xc0001301c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000188000, {0x491718, 0xc00001f020})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/09 17:33:11 server.go:3413: http: panic serving 127.0.0.1:53773: open app/views/templates/%!s(MISSING).html: The system cannot find the file specified.
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x3b1940?, 0xc000184180?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x491030, 0xc0001b2000}, {0x38b420, 0x48d1b0}, {0xc00015bab8?, 0xc000061688?, 0xc00015baa0?})
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:16 +0x251
+todo_app/app/controllers.top({0x491030?, 0xc0001b2000?}, 0xc00015bb30?)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x6cae00?, {0x491030?, 0xc0001b2000?}, 0x30a51a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0xc9139?, {0x491030, 0xc0001b2000}, 0xc0001085a0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00001f170?}, {0x491030?, 0xc0001b2000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000136090, {0x491718, 0xc00001f020})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/09 17:33:11 server.go:3413: http: panic serving 127.0.0.1:53774: open app/views/templates/%!s(MISSING).html: The system cannot find the file specified.
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x3b1940?, 0xc000088270?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x491030, 0xc00009c2a0}, {0x38b420, 0x48d1b0}, {0xc00015bab8?, 0xc000180288?, 0xc00015baa0?})
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:16 +0x251
+todo_app/app/controllers.top({0x491030?, 0xc00009c2a0?}, 0xc00015bb30?)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x6cae00?, {0x491030?, 0xc00009c2a0?}, 0x30a51a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0xc9139?, {0x491030, 0xc00009c2a0}, 0xc000098360)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000881b0?}, {0x491030?, 0xc00009c2a0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001881b0, {0x491718, 0xc00001f020})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/09 17:33:16 server.go:3413: http: panic serving 127.0.0.1:53775: open app/views/templates/%!s(MISSING).html: The system cannot find the file specified.
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x3b1940?, 0xc000088390?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x491030, 0xc00009c460}, {0x38b420, 0x48d1b0}, {0xc0001e7ab8?, 0xc000180508?, 0xc0001e7aa0?})
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:16 +0x251
+todo_app/app/controllers.top({0x491030?, 0xc00009c460?}, 0xc0001e7b30?)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x6cae00?, {0x491030?, 0xc00009c460?}, 0x30a51a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0xc9139?, {0x491030, 0xc00009c460}, 0xc000098480)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000882d0?}, {0x491030?, 0xc00009c460?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000188240, {0x491718, 0xc00001f020})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/09 17:33:46 server.go:3413: http: panic serving 127.0.0.1:53786: open app/views/templates/%!s(MISSING).html: The system cannot find the file specified.
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x3b1940?, 0xc000088600?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x491030, 0xc00009c620}, {0x38b420, 0x48d1b0}, {0xc00004dab8?, 0xc00021a288?, 0xc00004daa0?})
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:16 +0x251
+todo_app/app/controllers.top({0x491030?, 0xc00009c620?}, 0xc00004db30?)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x6cae00?, {0x491030?, 0xc00009c620?}, 0x30a51a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0xc9139?, {0x491030, 0xc00009c620}, 0xc0000985a0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000088540?}, {0x491030?, 0xc00009c620?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00009a3f0, {0x491718, 0xc00001f020})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/09 17:34:46 server.go:3413: http: panic serving 127.0.0.1:53817: open app/views/templates/%!s(MISSING).html: The system cannot find the file specified.
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x3b1940?, 0xc000184480?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x491030, 0xc0001b21c0}, {0x38b420, 0x48d1b0}, {0xc00004dab8?, 0xc000061b88?, 0xc00004daa0?})
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:16 +0x251
+todo_app/app/controllers.top({0x491030?, 0xc0001b21c0?}, 0xc00004db30?)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x6cae00?, {0x491030?, 0xc0001b21c0?}, 0x30a51a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0xc9139?, {0x491030, 0xc0001b21c0}, 0xc00019e360)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001843c0?}, {0x491030?, 0xc0001b21c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001362d0, {0x491718, 0xc00001f020})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 20:33:01 route_main.go:24: sql: no rows in result set
+2024/06/10 20:33:01 route_main.go:24: sql: no rows in result set
+2024/06/10 20:33:01 route_main.go:24: sql: no rows in result set
+2024/06/10 20:37:19 route_main.go:24: sql: no rows in result set
+2024/06/10 20:37:19 route_main.go:24: sql: no rows in result set
+2024/06/10 20:37:19 route_main.go:24: sql: no rows in result set
+2024/06/10 20:37:20 route_main.go:24: sql: no rows in result set
+2024/06/10 20:37:20 route_main.go:24: sql: no rows in result set
+2024/06/10 20:37:20 route_main.go:24: sql: no rows in result set
+2024/06/10 20:37:34 route_main.go:24: sql: no rows in result set
+2024/06/10 20:37:34 route_main.go:24: sql: no rows in result set
+2024/06/10 20:37:34 route_main.go:24: sql: no rows in result set
+2024/06/10 20:37:35 route_main.go:24: sql: no rows in result set
+2024/06/10 20:37:35 route_main.go:24: sql: no rows in result set
+2024/06/10 20:43:04 route_main.go:24: sql: no rows in result set
+2024/06/10 20:43:04 route_main.go:24: sql: no rows in result set
+2024/06/10 20:43:10 route_main.go:52: sql: no rows in result set
+2024/06/10 20:43:10 route_main.go:24: sql: no rows in result set
+2024/06/10 20:43:10 route_main.go:24: sql: no rows in result set
+2024/06/10 20:43:10 route_main.go:24: sql: no rows in result set
+2024/06/10 20:43:12 route_main.go:24: sql: no rows in result set
+2024/06/10 20:43:12 route_main.go:24: sql: no rows in result set
+2024/06/10 20:43:19 route_main.go:52: sql: no rows in result set
+2024/06/10 20:43:19 route_main.go:24: sql: no rows in result set
+2024/06/10 20:43:19 route_main.go:24: sql: no rows in result set
+2024/06/10 20:43:19 route_main.go:24: sql: no rows in result set
+2024/06/10 21:04:33 server.go:3413: http: panic serving 127.0.0.1:49532: runtime error: index out of range [2] with length 0
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff7e001f440?, 0xc0001160d8?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.parseURL.func2({0x7ff7e00e2490, 0xc0001509a0}, 0xc000192000)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff7e033c880?, {0x7ff7e00e2490?, 0xc0001509a0?}, 0x7ff7dfdbf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff7dfb7a399?, {0x7ff7e00e2490, 0xc0001509a0}, 0xc000192000)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000182030?}, {0x7ff7e00e2490?, 0xc0001509a0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00011c090, {0x7ff7e00e2c10, 0xc00011ea80})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:04:33 server.go:3413: http: panic serving 127.0.0.1:49539: runtime error: index out of range [2] with length 0
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff7e001f440?, 0xc0001a2078?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.parseURL.func2({0x7ff7e00e2490, 0xc0001b6000}, 0xc00010e360)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff7e033c880?, {0x7ff7e00e2490?, 0xc0001b6000?}, 0x7ff7dfdbf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff7dfb7a399?, {0x7ff7e00e2490, 0xc0001b6000}, 0xc00010e360)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00011eb70?}, {0x7ff7e00e2490?, 0xc0001b6000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00019a000, {0x7ff7e00e2c10, 0xc00011ea80})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:04:33 server.go:3413: http: panic serving 127.0.0.1:49543: runtime error: index out of range [2] with length 0
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff7e001f440?, 0xc000178a80?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.parseURL.func2({0x7ff7e00e2490, 0xc000150b60}, 0xc000192120)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff7e033c880?, {0x7ff7e00e2490?, 0xc000150b60?}, 0x7ff7dfdbf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff7dfb7a399?, {0x7ff7e00e2490, 0xc000150b60}, 0xc000192120)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001821e0?}, {0x7ff7e00e2490?, 0xc000150b60?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00011c240, {0x7ff7e00e2c10, 0xc00011ea80})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:04:34 server.go:3413: http: panic serving 127.0.0.1:49549: runtime error: index out of range [2] with length 0
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff7e001f440?, 0xc000178af8?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.parseURL.func2({0x7ff7e00e2490, 0xc000150d20}, 0xc00010e7e0)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff7e033c880?, {0x7ff7e00e2490?, 0xc000150d20?}, 0x7ff7dfdbf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff7dfb7a399?, {0x7ff7e00e2490, 0xc000150d20}, 0xc00010e7e0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00011ee40?}, {0x7ff7e00e2490?, 0xc000150d20?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000a6000, {0x7ff7e00e2c10, 0xc00011ea80})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:04:36 route_main.go:25: sql: no rows in result set
+2024/06/10 21:04:39 route_main.go:25: sql: no rows in result set
+2024/06/10 21:04:39 route_main.go:25: sql: no rows in result set
+2024/06/10 21:04:39 route_main.go:25: sql: no rows in result set
+2024/06/10 21:04:40 server.go:3413: http: panic serving 127.0.0.1:49558: runtime error: index out of range [2] with length 0
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff7e001f440?, 0xc0001a2210?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.parseURL.func2({0x7ff7e00e2490, 0xc0001b6620}, 0xc00008be60)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff7e033c880?, {0x7ff7e00e2490?, 0xc0001b6620?}, 0x7ff7dfdbf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff7dfb7a399?, {0x7ff7e00e2490, 0xc0001b6620}, 0xc00008be60)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000d08a0?}, {0x7ff7e00e2490?, 0xc0001b6620?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00019a5a0, {0x7ff7e00e2c10, 0xc00011ea80})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:04:40 server.go:3413: http: panic serving 127.0.0.1:49559: runtime error: index out of range [2] with length 0
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff7e001f440?, 0xc0001a2288?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.parseURL.func2({0x7ff7e00e2490, 0xc0001b67e0}, 0xc00010eb40)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff7e033c880?, {0x7ff7e00e2490?, 0xc0001b67e0?}, 0x7ff7dfdbf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff7dfb7a399?, {0x7ff7e00e2490, 0xc0001b67e0}, 0xc00010eb40)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00011f170?}, {0x7ff7e00e2490?, 0xc0001b67e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00019a630, {0x7ff7e00e2c10, 0xc00011ea80})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:04:40 server.go:3413: http: panic serving 127.0.0.1:49561: runtime error: index out of range [2] with length 0
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff7e001f440?, 0xc000178c00?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.parseURL.func2({0x7ff7e00e2490, 0xc0001510a0}, 0xc00010ec60)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff7e033c880?, {0x7ff7e00e2490?, 0xc0001510a0?}, 0x7ff7dfdbf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff7dfb7a399?, {0x7ff7e00e2490, 0xc0001510a0}, 0xc00010ec60)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00011f1d0?}, {0x7ff7e00e2490?, 0xc0001510a0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00019a900, {0x7ff7e00e2c10, 0xc00011ea80})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:04:41 server.go:3413: http: panic serving 127.0.0.1:49566: runtime error: index out of range [2] with length 0
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff7e001f440?, 0xc000178c78?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.parseURL.func2({0x7ff7e00e2490, 0xc000151260}, 0xc00010ed80)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff7e033c880?, {0x7ff7e00e2490?, 0xc000151260?}, 0x7ff7dfdbf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff7dfb7a399?, {0x7ff7e00e2490, 0xc000151260}, 0xc00010ed80)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00011f350?}, {0x7ff7e00e2490?, 0xc000151260?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00011c870, {0x7ff7e00e2c10, 0xc00011ea80})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:04:42 route_main.go:25: sql: no rows in result set
+2024/06/10 21:04:57 server.go:3413: http: panic serving 127.0.0.1:49576: runtime error: index out of range [2] with length 0
+goroutine 45 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff7e001f440?, 0xc0001a23a8?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.parseURL.func2({0x7ff7e00e2490, 0xc0001b6c40}, 0xc0000d2120)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff7e033c880?, {0x7ff7e00e2490?, 0xc0001b6c40?}, 0x7ff7dfdbf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff7dfb7a399?, {0x7ff7e00e2490, 0xc0001b6c40}, 0xc0000d2120)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000d09c0?}, {0x7ff7e00e2490?, 0xc0001b6c40?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00019ac60, {0x7ff7e00e2c10, 0xc00011ea80})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:04:57 server.go:3413: http: panic serving 127.0.0.1:49577: runtime error: index out of range [2] with length 0
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff7e001f440?, 0xc0001a2420?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.parseURL.func2({0x7ff7e00e2490, 0xc0001b6e00}, 0xc0000d2240)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff7e033c880?, {0x7ff7e00e2490?, 0xc0001b6e00?}, 0x7ff7dfdbf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff7dfb7a399?, {0x7ff7e00e2490, 0xc0001b6e00}, 0xc0000d2240)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000d0a80?}, {0x7ff7e00e2490?, 0xc0001b6e00?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000a6ab0, {0x7ff7e00e2c10, 0xc00011ea80})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:04:57 server.go:3413: http: panic serving 127.0.0.1:49579: runtime error: index out of range [2] with length 0
+goroutine 48 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff7e001f440?, 0xc000178d50?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.parseURL.func2({0x7ff7e00e2490, 0xc0001515e0}, 0xc00010eea0)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff7e033c880?, {0x7ff7e00e2490?, 0xc0001515e0?}, 0x7ff7dfdbf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff7dfb7a399?, {0x7ff7e00e2490, 0xc0001515e0}, 0xc00010eea0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00011f5c0?}, {0x7ff7e00e2490?, 0xc0001515e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00019af30, {0x7ff7e00e2c10, 0xc00011ea80})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:04:59 server.go:3413: http: panic serving 127.0.0.1:49580: runtime error: index out of range [2] with length 0
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff7e001f440?, 0xc0001a2498?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.parseURL.func2({0x7ff7e00e2490, 0xc0001b6fc0}, 0xc000193440)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff7e033c880?, {0x7ff7e00e2490?, 0xc0001b6fc0?}, 0x7ff7dfdbf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff7dfb7a399?, {0x7ff7e00e2490, 0xc0001b6fc0}, 0xc000193440)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000183c80?}, {0x7ff7e00e2490?, 0xc0001b6fc0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00011cd80, {0x7ff7e00e2c10, 0xc00011ea80})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:05:04 server.go:3413: http: panic serving 127.0.0.1:49591: runtime error: index out of range [2] with length 0
+goroutine 52 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff7e001f440?, 0xc000324078?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.parseURL.func2({0x7ff7e00e2490, 0xc00033a000}, 0xc0001937a0)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff7e033c880?, {0x7ff7e00e2490?, 0xc00033a000?}, 0x7ff7dfdbf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff7dfb7a399?, {0x7ff7e00e2490, 0xc00033a000}, 0xc0001937a0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000183e60?}, {0x7ff7e00e2490?, 0xc00033a000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00031c120, {0x7ff7e00e2c10, 0xc00011ea80})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:05:13 route_main.go:25: sql: no rows in result set
+2024/06/10 21:05:19 route_main.go:25: sql: no rows in result set
+2024/06/10 21:05:19 route_main.go:25: sql: no rows in result set
+2024/06/10 21:05:19 route_main.go:25: sql: no rows in result set
+2024/06/10 21:05:23 server.go:3413: http: panic serving 127.0.0.1:49592: runtime error: index out of range [2] with length 0
+goroutine 15 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff7e001f440?, 0xc000010a98?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.parseURL.func2({0x7ff7e00e2490, 0xc0000b37a0}, 0xc0000f6ea0)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff7e033c880?, {0x7ff7e00e2490?, 0xc0000b37a0?}, 0x7ff7dfdbf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff7dfb7a399?, {0x7ff7e00e2490, 0xc0000b37a0}, 0xc0000f6ea0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0003182a0?}, {0x7ff7e00e2490?, 0xc0000b37a0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000a6b40, {0x7ff7e00e2c10, 0xc00011ea80})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:05:23 server.go:3413: http: panic serving 127.0.0.1:49593: runtime error: index out of range [2] with length 0
+goroutine 16 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff7e001f440?, 0xc000010b10?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.parseURL.func2({0x7ff7e00e2490, 0xc0000b3960}, 0xc0000d2360)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff7e033c880?, {0x7ff7e00e2490?, 0xc0000b3960?}, 0x7ff7dfdbf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff7dfb7a399?, {0x7ff7e00e2490, 0xc0000b3960}, 0xc0000d2360)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000d0ba0?}, {0x7ff7e00e2490?, 0xc0000b3960?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000a6bd0, {0x7ff7e00e2c10, 0xc00011ea80})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:05:23 server.go:3413: http: panic serving 127.0.0.1:49603: runtime error: index out of range [2] with length 0
+goroutine 76 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff7e001f440?, 0xc0003242d0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.parseURL.func2({0x7ff7e00e2490, 0xc00033a700}, 0xc000366ea0)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff7e033c880?, {0x7ff7e00e2490?, 0xc00033a700?}, 0x7ff7dfdbf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff7dfb7a399?, {0x7ff7e00e2490, 0xc00033a700}, 0xc000366ea0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000318fc0?}, {0x7ff7e00e2490?, 0xc00033a700?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000a7c20, {0x7ff7e00e2c10, 0xc00011ea80})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:05:24 server.go:3413: http: panic serving 127.0.0.1:49604: runtime error: index out of range [2] with length 0
+goroutine 59 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff7e001f440?, 0xc000324348?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.parseURL.func2({0x7ff7e00e2490, 0xc00033a8c0}, 0xc000366fc0)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff7e033c880?, {0x7ff7e00e2490?, 0xc00033a8c0?}, 0x7ff7dfdbf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff7dfb7a399?, {0x7ff7e00e2490, 0xc00033a8c0}, 0xc000366fc0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000319140?}, {0x7ff7e00e2490?, 0xc00033a8c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00031cab0, {0x7ff7e00e2c10, 0xc00011ea80})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:05:24 route_main.go:25: sql: no rows in result set
+2024/06/10 21:06:42 server.go:3413: http: panic serving 127.0.0.1:49692: runtime error: index out of range [2] with length 0
+goroutine 84 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff7e001f440?, 0xc0003244c8?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.parseURL.func2({0x7ff7e00e2490, 0xc00033aee0}, 0xc0000f6fc0)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff7e033c880?, {0x7ff7e00e2490?, 0xc00033aee0?}, 0x7ff7dfdbf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff7dfb7a399?, {0x7ff7e00e2490, 0xc00033aee0}, 0xc0000f6fc0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000ef830?}, {0x7ff7e00e2490?, 0xc00033aee0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00019b3b0, {0x7ff7e00e2c10, 0xc00011ea80})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:06:42 server.go:3413: http: panic serving 127.0.0.1:49693: runtime error: index out of range [2] with length 0
+goroutine 63 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff7e001f440?, 0xc0001a25d0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.parseURL.func2({0x7ff7e00e2490, 0xc0001b7420}, 0xc0002dc240)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff7e033c880?, {0x7ff7e00e2490?, 0xc0001b7420?}, 0x7ff7dfdbf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff7dfb7a399?, {0x7ff7e00e2490, 0xc0001b7420}, 0xc0002dc240)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002d89f0?}, {0x7ff7e00e2490?, 0xc0001b7420?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00031d0e0, {0x7ff7e00e2c10, 0xc00011ea80})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:06:42 server.go:3413: http: panic serving 127.0.0.1:49697: runtime error: index out of range [2] with length 0
+goroutine 86 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff7e001f440?, 0xc0001a2648?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.parseURL.func2({0x7ff7e00e2490, 0xc0001b75e0}, 0xc0000f70e0)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff7e033c880?, {0x7ff7e00e2490?, 0xc0001b75e0?}, 0x7ff7dfdbf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff7dfb7a399?, {0x7ff7e00e2490, 0xc0001b75e0}, 0xc0000f70e0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000ef890?}, {0x7ff7e00e2490?, 0xc0001b75e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00019b560, {0x7ff7e00e2c10, 0xc00011ea80})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:06:44 server.go:3413: http: panic serving 127.0.0.1:49698: runtime error: index out of range [2] with length 0
+goroutine 65 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff7e001f440?, 0xc0001a26c0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.parseURL.func2({0x7ff7e00e2490, 0xc0001b77a0}, 0xc0002dc360)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff7e033c880?, {0x7ff7e00e2490?, 0xc0001b77a0?}, 0x7ff7dfdbf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff7dfb7a399?, {0x7ff7e00e2490, 0xc0001b77a0}, 0xc0002dc360)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002d8c30?}, {0x7ff7e00e2490?, 0xc0001b77a0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00031d290, {0x7ff7e00e2c10, 0xc00011ea80})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:06:44 route_main.go:25: sql: no rows in result set
+2024/06/10 21:09:33 route_main.go:25: sql: no rows in result set
+2024/06/10 21:09:35 route_main.go:25: sql: no rows in result set
+2024/06/10 21:09:36 route_main.go:25: sql: no rows in result set
+2024/06/10 21:09:36 route_main.go:25: sql: no rows in result set
+2024/06/10 21:09:36 route_main.go:25: sql: no rows in result set
+2024/06/10 21:13:37 route_main.go:25: sql: no rows in result set
+2024/06/10 21:52:20 server.go:3413: http: panic serving 127.0.0.1:53918: template: index.html:13: unexpected EOF
+goroutine 60 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff72c661440?, 0xc000333e20?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x7ff72c763550, 0xc0003177a0}, {0x7ff72c6a6080, 0xc000267a00}, {0xc000361a10?, 0xc0003620e0?, 0x10?})
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:19 +0x23a
+todo_app/app/controllers.index({0x7ff72c763550, 0xc0003177a0}, 0xc0002e1680)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/route_main.go:30 +0x314
+net/http.HandlerFunc.ServeHTTP(0x7ff72c9be880?, {0x7ff72c763550?, 0xc0003177a0?}, 0x7ff72c43f81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff72c1fa399?, {0x7ff72c763550, 0xc0003177a0}, 0xc0002e1680)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002dfef0?}, {0x7ff72c763550?, 0xc0003177a0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001de480, {0x7ff72c763cd0, 0xc00001f3e0})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:52:20 server.go:3413: http: panic serving 127.0.0.1:53919: template: index.html:13: unexpected EOF
+goroutine 61 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff72c661440?, 0xc0003b0220?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x7ff72c763550, 0xc000317a40}, {0x7ff72c6a6080, 0xc000267d00}, {0xc000361a10?, 0xc000363330?, 0x10?})
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:19 +0x23a
+todo_app/app/controllers.index({0x7ff72c763550, 0xc000317a40}, 0xc0001e6a20)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/route_main.go:30 +0x314
+net/http.HandlerFunc.ServeHTTP(0x7ff72c9be880?, {0x7ff72c763550?, 0xc000317a40?}, 0x7ff72c43f81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff72c1fa399?, {0x7ff72c763550, 0xc000317a40}, 0xc0001e6a20)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001ea7e0?}, {0x7ff72c763550?, 0xc000317a40?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001de510, {0x7ff72c763cd0, 0xc00001f3e0})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:52:20 server.go:3413: http: panic serving 127.0.0.1:53920: template: index.html:13: unexpected EOF
+goroutine 86 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff72c661440?, 0xc0003b0590?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x7ff72c763550, 0xc000317ce0}, {0x7ff72c6a6080, 0xc0003c8080}, {0xc000361a10?, 0xc0003635d0?, 0x10?})
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:19 +0x23a
+todo_app/app/controllers.index({0x7ff72c763550, 0xc000317ce0}, 0xc0002e17a0)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/route_main.go:30 +0x314
+net/http.HandlerFunc.ServeHTTP(0x7ff72c9be880?, {0x7ff72c763550?, 0xc000317ce0?}, 0x7ff72c43f81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff72c1fa399?, {0x7ff72c763550, 0xc000317ce0}, 0xc0002e17a0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002dff50?}, {0x7ff72c763550?, 0xc000317ce0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000356630, {0x7ff72c763cd0, 0xc00001f3e0})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:52:21 server.go:3413: http: panic serving 127.0.0.1:53924: template: index.html:13: unexpected EOF
+goroutine 88 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff72c661440?, 0xc0001c5b20?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x7ff72c763550, 0xc0001dc620}, {0x7ff72c6a6080, 0xc000119b00}, {0xc00019da10?, 0xc0001c16a0?, 0x10?})
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:19 +0x23a
+todo_app/app/controllers.index({0x7ff72c763550, 0xc0001dc620}, 0xc0003d0480)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/route_main.go:30 +0x314
+net/http.HandlerFunc.ServeHTTP(0x7ff72c9be880?, {0x7ff72c763550?, 0xc0001dc620?}, 0x7ff72c43f81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff72c1fa399?, {0x7ff72c763550, 0xc0001dc620}, 0xc0003d0480)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0003b4de0?}, {0x7ff72c763550?, 0xc0001dc620?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000356990, {0x7ff72c763cd0, 0xc00001f3e0})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:52:21 server.go:3413: http: panic serving 127.0.0.1:53925: template: index.html:13: unexpected EOF
+goroutine 63 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff72c661440?, 0xc0003b0910?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x7ff72c763550, 0xc0003e6000}, {0x7ff72c6a6080, 0xc0003c8280}, {0xc000361a10?, 0xc000363890?, 0x10?})
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:19 +0x23a
+todo_app/app/controllers.index({0x7ff72c763550, 0xc0003e6000}, 0xc0001e7320)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/route_main.go:30 +0x314
+net/http.HandlerFunc.ServeHTTP(0x7ff72c9be880?, {0x7ff72c763550?, 0xc0003e6000?}, 0x7ff72c43f81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff72c1fa399?, {0x7ff72c763550, 0xc0003e6000}, 0xc0001e7320)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001eb2f0?}, {0x7ff72c763550?, 0xc0003e6000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001de870, {0x7ff72c763cd0, 0xc00001f3e0})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:52:21 server.go:3413: http: panic serving 127.0.0.1:53926: template: index.html:13: unexpected EOF
+goroutine 89 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff72c661440?, 0xc0002c3c40?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x7ff72c763550, 0xc0002e8380}, {0x7ff72c6a6080, 0xc0002e6380}, {0xc000361a10?, 0xc0002b5c50?, 0x10?})
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:19 +0x23a
+todo_app/app/controllers.index({0x7ff72c763550, 0xc0002e8380}, 0xc0001e7440)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/route_main.go:30 +0x314
+net/http.HandlerFunc.ServeHTTP(0x7ff72c9be880?, {0x7ff72c763550?, 0xc0002e8380?}, 0x7ff72c43f81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff72c1fa399?, {0x7ff72c763550, 0xc0002e8380}, 0xc0001e7440)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001eb350?}, {0x7ff72c763550?, 0xc0002e8380?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000356a20, {0x7ff72c763cd0, 0xc00001f3e0})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:52:21 server.go:3413: http: panic serving 127.0.0.1:53927: template: index.html:13: unexpected EOF
+goroutine 93 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff72c661440?, 0xc0002c2360?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x7ff72c763550, 0xc0002e8000}, {0x7ff72c6a6080, 0xc000118080}, {0xc00019da10?, 0xc0002b4390?, 0x10?})
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:19 +0x23a
+todo_app/app/controllers.index({0x7ff72c763550, 0xc0002e8000}, 0xc0001e6000)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/route_main.go:30 +0x314
+net/http.HandlerFunc.ServeHTTP(0x7ff72c9be880?, {0x7ff72c763550?, 0xc0002e8000?}, 0x7ff72c43f81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff72c1fa399?, {0x7ff72c763550, 0xc0002e8000}, 0xc0001e6000)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0003b4030?}, {0x7ff72c763550?, 0xc0002e8000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0002d2000, {0x7ff72c763cd0, 0xc00001f3e0})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:52:36 server.go:3413: http: panic serving 127.0.0.1:53962: template: index.html:13: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74b5e1440?, 0xc00010a370?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x7ff74b6e3550, 0xc000132000}, {0x7ff74b626080, 0xc000138100}, {0xc000029a10?, 0xc0001043c0?, 0x10?})
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:19 +0x23a
+todo_app/app/controllers.index({0x7ff74b6e3550, 0xc000132000}, 0xc000114000)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/route_main.go:30 +0x314
+net/http.HandlerFunc.ServeHTTP(0x7ff74b93e880?, {0x7ff74b6e3550?, 0xc000132000?}, 0x7ff74b3bf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff74b17a399?, {0x7ff74b6e3550, 0xc000132000}, 0xc000114000)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000106030?}, {0x7ff74b6e3550?, 0xc000132000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000a6090, {0x7ff74b6e3cd0, 0xc00001f3e0})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:52:38 server.go:3413: http: panic serving 127.0.0.1:53963: template: index.html:13: unexpected EOF
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74b5e1440?, 0xc000024790?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x7ff74b6e3550, 0xc0000c2a80}, {0x7ff74b626080, 0xc000098280}, {0xc000029a10?, 0xc00000aa30?, 0x10?})
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:19 +0x23a
+todo_app/app/controllers.index({0x7ff74b6e3550, 0xc0000c2a80}, 0xc0001a4000)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/route_main.go:30 +0x314
+net/http.HandlerFunc.ServeHTTP(0x7ff74b93e880?, {0x7ff74b6e3550?, 0xc0000c2a80?}, 0x7ff74b3bf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff74b17a399?, {0x7ff74b6e3550, 0xc0000c2a80}, 0xc0001a4000)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000184090?}, {0x7ff74b6e3550?, 0xc0000c2a80?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000188000, {0x7ff74b6e3cd0, 0xc00001f3e0})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:52:38 server.go:3413: http: panic serving 127.0.0.1:53968: template: index.html:13: unexpected EOF
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74b5e1440?, 0xc00010a700?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x7ff74b6e3550, 0xc000132380}, {0x7ff74b626080, 0xc000138380}, {0xc000175a10?, 0xc0001054b0?, 0x10?})
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:19 +0x23a
+todo_app/app/controllers.index({0x7ff74b6e3550, 0xc000132380}, 0xc000114b40)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/route_main.go:30 +0x314
+net/http.HandlerFunc.ServeHTTP(0x7ff74b93e880?, {0x7ff74b6e3550?, 0xc000132380?}, 0x7ff74b3bf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff74b17a399?, {0x7ff74b6e3550, 0xc000132380}, 0xc000114b40)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000106b40?}, {0x7ff74b6e3550?, 0xc000132380?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000a63f0, {0x7ff74b6e3cd0, 0xc00001f3e0})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:52:42 server.go:3413: http: panic serving 127.0.0.1:53972: template: index.html:13: unexpected EOF
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74b5e1440?, 0xc000024b20?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x7ff74b6e3550, 0xc0000c2d20}, {0x7ff74b626080, 0xc000098580}, {0xc000029a10?, 0xc00000ad00?, 0x10?})
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:19 +0x23a
+todo_app/app/controllers.index({0x7ff74b6e3550, 0xc0000c2d20}, 0xc00008b0e0)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/route_main.go:30 +0x314
+net/http.HandlerFunc.ServeHTTP(0x7ff74b93e880?, {0x7ff74b6e3550?, 0xc0000c2d20?}, 0x7ff74b3bf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff74b17a399?, {0x7ff74b6e3550, 0xc0000c2d20}, 0xc00008b0e0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000fa120?}, {0x7ff74b6e3550?, 0xc0000c2d20?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000188090, {0x7ff74b6e3cd0, 0xc00001f3e0})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:52:47 server.go:3413: http: panic serving 127.0.0.1:53973: template: index.html:13: unexpected EOF
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74b5e1440?, 0xc000024e90?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x7ff74b6e3550, 0xc0000c2fc0}, {0x7ff74b626080, 0xc000098800}, {0xc000171a10?, 0xc00000af80?, 0x10?})
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:19 +0x23a
+todo_app/app/controllers.index({0x7ff74b6e3550, 0xc0000c2fc0}, 0xc000115440)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/route_main.go:30 +0x314
+net/http.HandlerFunc.ServeHTTP(0x7ff74b93e880?, {0x7ff74b6e3550?, 0xc0000c2fc0?}, 0x7ff74b3bf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff74b17a399?, {0x7ff74b6e3550, 0xc0000c2fc0}, 0xc000115440)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000107710?}, {0x7ff74b6e3550?, 0xc0000c2fc0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000118630, {0x7ff74b6e3cd0, 0xc00001f3e0})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:52:47 server.go:3413: http: panic serving 127.0.0.1:53974: template: index.html:13: unexpected EOF
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74b5e1440?, 0xc000025200?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x7ff74b6e3550, 0xc0000c3260}, {0x7ff74b626080, 0xc000098a00}, {0xc000171a10?, 0xc00000b200?, 0x10?})
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:19 +0x23a
+todo_app/app/controllers.index({0x7ff74b6e3550, 0xc0000c3260}, 0xc000115560)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/route_main.go:30 +0x314
+net/http.HandlerFunc.ServeHTTP(0x7ff74b93e880?, {0x7ff74b6e3550?, 0xc0000c3260?}, 0x7ff74b3bf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff74b17a399?, {0x7ff74b6e3550, 0xc0000c3260}, 0xc000115560)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000107770?}, {0x7ff74b6e3550?, 0xc0000c3260?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000a67e0, {0x7ff74b6e3cd0, 0xc00001f3e0})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/06/10 21:52:47 server.go:3413: http: panic serving 127.0.0.1:53978: template: index.html:13: unexpected EOF
+goroutine 15 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74b5e1440?, 0xc000025580?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x7ff74b6e3550, 0xc0000c3500}, {0x7ff74b626080, 0xc000098c00}, {0xc000171a10?, 0xc00000b4a0?, 0x10?})
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/server.go:19 +0x23a
+todo_app/app/controllers.index({0x7ff74b6e3550, 0xc0000c3500}, 0xc0002b27e0)
+	C:/Users/fcmac/Documents/Develop/learning_go/todo_app/app/controllers/route_main.go:30 +0x314
+net/http.HandlerFunc.ServeHTTP(0x7ff74b93e880?, {0x7ff74b6e3550?, 0xc0000c3500?}, 0x7ff74b3bf81a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff74b17a399?, {0x7ff74b6e3550, 0xc0000c3500}, 0xc0002b27e0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002b41e0?}, {0x7ff74b6e3550?, 0xc0000c3500?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000a6e10, {0x7ff74b6e3cd0, 0xc00001f3e0})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
